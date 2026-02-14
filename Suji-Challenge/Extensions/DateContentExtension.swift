@@ -31,7 +31,6 @@ extension DOBView {
             
             Spacer()
             
-            
             if hasUserSelectedDate {
                 Text(selectedBirthDate.formatted(date: .numeric, time: .omitted))
                     .foregroundStyle(.gray)
@@ -43,13 +42,12 @@ extension DOBView {
                 
                 SujiButton(title: "Continue", isEnabled: true) {
                     userState.user.dob = selectedBirthDate.formatted(date: .numeric, time: .omitted)
-                    path.append(.focus)
+                    path.append(.sex)
                 }
             }
         }
 
-        .padding(.horizontal)
-        .padding(.top)
+       
     }
     
 }

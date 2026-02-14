@@ -23,6 +23,7 @@ struct Suji_ChallengeApp: App {
                                 .environmentObject(userState)
                         case .sex:
                             SexView(path: $path)
+                                .environmentObject(userState)
                         case .focus:
                             FocusView(path: $path)
                         case .upload:
