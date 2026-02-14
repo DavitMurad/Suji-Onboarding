@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F0D529192F3A55BF00FA0636 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D529162F3A55BF00FA0636 /* ContentView.swift */; };
+		27CFB3CD2F3FC490000A31B5 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3CC2F3FC47F000A31B5 /* UserProfile.swift */; };
+		27CFB3D12F3FC4E7000A31B5 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3D02F3FC4E4000A31B5 /* Gender.swift */; };
+		27CFB3D42F3FC6A7000A31B5 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3D32F3FC6A1000A31B5 /* UserState.swift */; };
+		27CFB3D72F3FF2FC000A31B5 /* EmailExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3D62F3FF2D9000A31B5 /* EmailExtension.swift */; };
+		27CFB3D92F40A724000A31B5 /* EmailViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3D82F40A724000A31B5 /* EmailViewExtension.swift */; };
+		27CFB3DB2F40A842000A31B5 /* SujiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3DA2F40A83B000A31B5 /* SujiTextField.swift */; };
+		27CFB3DD2F40AA4E000A31B5 /* SujiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3DC2F40AA4E000A31B5 /* SujiButton.swift */; };
+		27CFB3DF2F40AEB4000A31B5 /* DOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3DE2F40AEB4000A31B5 /* DOBView.swift */; };
+		F0D529192F3A55BF00FA0636 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D529162F3A55BF00FA0636 /* EmailView.swift */; };
 		F0D5291A2F3A55BF00FA0636 /* Suji_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D529172F3A55BF00FA0636 /* Suji_ChallengeApp.swift */; };
 		F0D5291B2F3A55BF00FA0636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D529152F3A55BF00FA0636 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27CFB3CC2F3FC47F000A31B5 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		27CFB3D02F3FC4E4000A31B5 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		27CFB3D32F3FC6A1000A31B5 /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
+		27CFB3D62F3FF2D9000A31B5 /* EmailExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailExtension.swift; sourceTree = "<group>"; };
+		27CFB3D82F40A724000A31B5 /* EmailViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewExtension.swift; sourceTree = "<group>"; };
+		27CFB3DA2F40A83B000A31B5 /* SujiTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujiTextField.swift; sourceTree = "<group>"; };
+		27CFB3DC2F40AA4E000A31B5 /* SujiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujiButton.swift; sourceTree = "<group>"; };
+		27CFB3DE2F40AEB4000A31B5 /* DOBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOBView.swift; sourceTree = "<group>"; };
 		F0D528EB2F3A544600FA0636 /* Suji-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Suji-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D529152F3A55BF00FA0636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F0D529162F3A55BF00FA0636 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0D529162F3A55BF00FA0636 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
 		F0D529172F3A55BF00FA0636 /* Suji_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suji_ChallengeApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -30,6 +46,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27CFB3C82F3FC068000A31B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27CFB3D02F3FC4E4000A31B5 /* Gender.swift */,
+				27CFB3CC2F3FC47F000A31B5 /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27CFB3C92F3FC077000A31B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27CFB3D62F3FF2D9000A31B5 /* EmailExtension.swift */,
+				27CFB3D82F40A724000A31B5 /* EmailViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		27CFB3CA2F3FC43D000A31B5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				27CFB3DA2F40A83B000A31B5 /* SujiTextField.swift */,
+				27CFB3DC2F40AA4E000A31B5 /* SujiButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		27CFB3CB2F3FC44B000A31B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0D529162F3A55BF00FA0636 /* EmailView.swift */,
+				27CFB3DE2F40AEB4000A31B5 /* DOBView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		27CFB3D22F3FC69A000A31B5 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				27CFB3D32F3FC6A1000A31B5 /* UserState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 		F0D528E22F3A544600FA0636 = {
 			isa = PBXGroup;
 			children = (
@@ -49,8 +109,12 @@
 		F0D529182F3A55BF00FA0636 /* Suji-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				27CFB3D22F3FC69A000A31B5 /* State */,
+				27CFB3CB2F3FC44B000A31B5 /* Views */,
+				27CFB3CA2F3FC43D000A31B5 /* Components */,
+				27CFB3C92F3FC077000A31B5 /* Extensions */,
+				27CFB3C82F3FC068000A31B5 /* Models */,
 				F0D529152F3A55BF00FA0636 /* Assets.xcassets */,
-				F0D529162F3A55BF00FA0636 /* ContentView.swift */,
 				F0D529172F3A55BF00FA0636 /* Suji_ChallengeApp.swift */,
 			);
 			path = "Suji-Challenge";
@@ -128,8 +192,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0D529192F3A55BF00FA0636 /* ContentView.swift in Sources */,
+				27CFB3D12F3FC4E7000A31B5 /* Gender.swift in Sources */,
+				27CFB3DD2F40AA4E000A31B5 /* SujiButton.swift in Sources */,
+				27CFB3DF2F40AEB4000A31B5 /* DOBView.swift in Sources */,
+				27CFB3D42F3FC6A7000A31B5 /* UserState.swift in Sources */,
+				27CFB3D72F3FF2FC000A31B5 /* EmailExtension.swift in Sources */,
+				27CFB3D92F40A724000A31B5 /* EmailViewExtension.swift in Sources */,
+				F0D529192F3A55BF00FA0636 /* EmailView.swift in Sources */,
 				F0D5291A2F3A55BF00FA0636 /* Suji_ChallengeApp.swift in Sources */,
+				27CFB3CD2F3FC490000A31B5 /* UserProfile.swift in Sources */,
+				27CFB3DB2F40A842000A31B5 /* SujiTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +330,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AD62FWB5PD;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -279,7 +351,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Suji.Suji-Challenge";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Suji.Suji-Challenge1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
@@ -305,7 +377,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AD62FWB5PD;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -326,7 +398,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Suji.Suji-Challenge";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Suji.Suji-Challenge1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;

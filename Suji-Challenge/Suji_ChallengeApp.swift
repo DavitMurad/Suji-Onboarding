@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct Suji_ChallengeApp: App {
+    @State private var userState = UserState()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                EmailView()
+                    .environmentObject(userState)
+            }
         }
     }
 }
