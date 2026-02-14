@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct DOBView: View {
+    @State var selectedBirthDate: Date = Date()
+    @State var hasUserSelectedDate = false
+    @EnvironmentObject var userState: UserState
+    @Binding var path: [OnboardingRoute]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            
+        
+        SujiGradient()
+        
+        dateStackContent
+        
+            .toolbar {
+                SujiLogout(path: $path)
+            }
+        //            .navigationBarBackButtonHidden()
     }
 }
-
-#Preview {
-    DOBView()
 }
+
+//#Preview {
+//    DOBView()
+//}

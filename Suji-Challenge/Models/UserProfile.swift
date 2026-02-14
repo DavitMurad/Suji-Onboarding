@@ -11,7 +11,7 @@ import Foundation
 struct UserProfile {
     var emailAddress = ""
     var dob: String?
-    var gender: Gender?
+    var gender: Sex?
     var focusAreas: [String]?
     var imageName: String?
     

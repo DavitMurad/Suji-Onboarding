@@ -10,6 +10,7 @@ import SwiftUI
 struct EmailView: View {
     @EnvironmentObject var userState: UserState
     @FocusState var isFieldFocused: Bool
+    @Binding var path: [OnboardingRoute]
     @State var isPresented = false
     
     var isEmailValid: Bool {

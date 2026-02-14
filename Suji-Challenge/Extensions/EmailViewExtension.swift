@@ -48,16 +48,14 @@ extension EmailView {
                         
                         SujiTextField(placeholder: "Enter you email", textFieldText: $userState.user.emailAddress,  isFieldFocused: $isFieldFocused)
 
-                        SujiButton(title: "Continue",isEnabled: isEmailValid) {
-                            if isEmailValid {
-                                isPresented = true
-                                isFieldFocused = false
-                            }
+                        SujiButton(title: "Continue", isEnabled: isEmailValid) {
+                            path.append(.dob)
+                            isFieldFocused = false
                         }
                         .disabled(!isEmailValid)
-                        .navigationDestination(isPresented: $isPresented) {
-                            DOBView()
-                        }
+//                        .navigationDestination(isPresented: $isPresented) {
+//                            DOBView()
+//                        }
                         
                     }
                     .padding(.horizontal, 30)

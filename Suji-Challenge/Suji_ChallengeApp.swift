@@ -10,13 +10,29 @@ import SwiftUI
 @main
 struct Suji_ChallengeApp: App {
     @State private var userState = UserState()
+    @State private var path: [OnboardingRoute] = []
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                EmailView()
+            NavigationStack(path: $path) {
+                EmailView(path: $path)
+                    .navigationDestination(for: OnboardingRoute.self, destination: { route in
+                        switch route {
+                        case .dob:
+                            DOBView(path: $path)
+                                .environmentObject(userState)
+                        case .sex:
+                            SexView(path: $path)
+                        case .focus:
+                            FocusView(path: $path)
+                        case .upload:
+                            UploadView(path: $path)
+                        }
+                    })
                     .environmentObject(userState)
             }
+            .preferredColorScheme(.dark)
         }
+        
     }
 }

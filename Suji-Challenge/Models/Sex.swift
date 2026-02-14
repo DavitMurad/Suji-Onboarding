@@ -5,6 +5,6 @@
 //  Created by Davit Muradyan on 13.02.26.
 //
 
-struct Gender {
+struct Sex {
     let genderName = ""
 }
