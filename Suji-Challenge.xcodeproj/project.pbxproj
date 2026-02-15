@@ -27,6 +27,7 @@
 		27CFB3FD2F414333000A31B5 /* SexViewExension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3FC2F41431F000A31B5 /* SexViewExension.swift */; };
 		27CFB3FF2F4145F6000A31B5 /* FocusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3FE2F4145F6000A31B5 /* FocusButton.swift */; };
 		27CFB4052F41F0FC000A31B5 /* FocusViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB4042F41F0F0000A31B5 /* FocusViewExtension.swift */; };
+		27CFB40B2F41FEB3000A31B5 /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB40A2F41FEB3000A31B5 /* EndView.swift */; };
 		F0D529192F3A55BF00FA0636 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D529162F3A55BF00FA0636 /* EmailView.swift */; };
 		F0D5291A2F3A55BF00FA0636 /* Suji_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D529172F3A55BF00FA0636 /* Suji_ChallengeApp.swift */; };
 		F0D5291B2F3A55BF00FA0636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D529152F3A55BF00FA0636 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		27CFB3FC2F41431F000A31B5 /* SexViewExension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexViewExension.swift; sourceTree = "<group>"; };
 		27CFB3FE2F4145F6000A31B5 /* FocusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusButton.swift; sourceTree = "<group>"; };
 		27CFB4042F41F0F0000A31B5 /* FocusViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewExtension.swift; sourceTree = "<group>"; };
+		27CFB40A2F41FEB3000A31B5 /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
 		F0D528EB2F3A544600FA0636 /* Suji-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Suji-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D529152F3A55BF00FA0636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0D529162F3A55BF00FA0636 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				27CFB3E62F40E1A3000A31B5 /* SexView.swift */,
 				27CFB3E82F40E1C5000A31B5 /* UploadView.swift */,
 				27CFB3EA2F40E22F000A31B5 /* FocusView.swift */,
+				27CFB40A2F41FEB3000A31B5 /* EndView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				27CFB3CD2F3FC490000A31B5 /* UserProfile.swift in Sources */,
 				27CFB3F32F40EC3B000A31B5 /* SujiGradient.swift in Sources */,
 				27CFB3E92F40E1C5000A31B5 /* UploadView.swift in Sources */,
+				27CFB40B2F41FEB3000A31B5 /* EndView.swift in Sources */,
 				27CFB3F12F40EA27000A31B5 /* SujiLogout.swift in Sources */,
 				27CFB3FF2F4145F6000A31B5 /* FocusButton.swift in Sources */,
 				27CFB3DB2F40A842000A31B5 /* SujiTextField.swift in Sources */,

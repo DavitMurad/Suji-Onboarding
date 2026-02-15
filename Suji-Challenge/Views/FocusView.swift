@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FocusView: View {
     @Binding var path: [OnboardingRoute]
-    @State var selectedFocuses = [Focus]()
     @EnvironmentObject var userState: UserState
     var body: some View {
         ZStack {
@@ -18,14 +17,14 @@ struct FocusView: View {
                 focusContent
                     .padding(.top, 60)
             }
-            if selectedFocuses.count > 0 {
-                SujiButton(title: "Continue", isEnabled: true) {
-                    userState.user.focusAreas = selectedFocuses
-                    path.append(.upload)
+            if userState.user.focusAreas.count > 0 {
+                withAnimation(.easeInOut) {
+                    SujiButton(title: "Continue", isEnabled: true) {
+                        path.append(.upload)
+                    }
+                    .padding(.horizontal, 30)
                 }
-                .padding(.horizontal, 30)
             }
-            
         }
         .toolbar {
             SujiLogout(path: $path)

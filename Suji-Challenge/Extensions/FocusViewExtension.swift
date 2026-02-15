@@ -9,6 +9,7 @@ import SwiftUI
 
 extension FocusView {
     var focusContent: some View {
+        
         VStack(spacing: 15) {
             Group {
                 Text("My Focus")
@@ -23,13 +24,21 @@ extension FocusView {
             
             VStack(spacing: 20) {
                 ForEach(Focus.allCases, id: \.self) { focus in
-                    FocusButton(focus: focus, isSelected: selectedFocuses.contains(focus)) {
-                        selectedFocuses.append(focus)
+                    FocusButton(
+                        focus: focus,
+                        isSelected: userState.user.focusAreas.contains(focus)
+                    ) {
+                        if userState.user.focusAreas.contains(focus) {
+                            userState.user.focusAreas.remove(focus)
+                        } else {
+                            userState.user.focusAreas.insert(focus)
+                        }
                     }
+                    
                 }
             }
             .padding(.horizontal, 30)
-          
+            
             .padding(.top, 50)
         }
     }

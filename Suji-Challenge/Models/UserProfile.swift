@@ -12,7 +12,7 @@ struct UserProfile {
     var emailAddress = ""
     var dob: String?
     var gender: Sex?
-    var focusAreas: [Focus]?
+    var focusAreas: Set<Focus> = []
     var imageName: String?
     
 }

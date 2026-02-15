@@ -10,4 +10,5 @@ enum OnboardingRoute: Hashable {
     case sex
     case focus
     case upload
+    case end
 }
