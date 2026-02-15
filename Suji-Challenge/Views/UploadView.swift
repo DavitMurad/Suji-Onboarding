@@ -9,12 +9,8 @@ import SwiftUI
 
 struct UploadView: View {
     @Binding var path: [OnboardingRoute]
-
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
     }
 }
-//
-//#Preview {
-//    UploadView()
-//}

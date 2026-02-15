@@ -9,12 +9,32 @@ import SwiftUI
 
 struct FocusView: View {
     @Binding var path: [OnboardingRoute]
-
+    @State var selectedFocuses = [Focus]()
+    @EnvironmentObject var userState: UserState
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            SujiGradient()
+            ScrollView {
+                focusContent
+                    .padding(.top, 60)
+            }
+            if selectedFocuses.count > 0 {
+                SujiButton(title: "Continue", isEnabled: true) {
+                    userState.user.focusAreas = selectedFocuses
+                    path.append(.upload)
+                }
+                .padding(.horizontal, 30)
+            }
+            
+        }
+        .toolbar {
+            SujiLogout(path: $path)
+        }
+        
     }
 }
 
 //#Preview {
-//    FocusView()
+//    @Previewable @State var route: [OnboardingRoute] = [.focus]
+//    FocusView(path: $route)
 //}

@@ -19,10 +19,14 @@
 		27CFB3E72F40E1A3000A31B5 /* SexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3E62F40E1A3000A31B5 /* SexView.swift */; };
 		27CFB3E92F40E1C5000A31B5 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3E82F40E1C5000A31B5 /* UploadView.swift */; };
 		27CFB3EB2F40E22F000A31B5 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3EA2F40E22F000A31B5 /* FocusView.swift */; };
-		27CFB3ED2F40E95A000A31B5 /* DateContentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3EC2F40E950000A31B5 /* DateContentExtension.swift */; };
+		27CFB3ED2F40E95A000A31B5 /* DateViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3EC2F40E950000A31B5 /* DateViewExtension.swift */; };
 		27CFB3F12F40EA27000A31B5 /* SujiLogout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3F02F40EA22000A31B5 /* SujiLogout.swift */; };
 		27CFB3F32F40EC3B000A31B5 /* SujiGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3F22F40EC33000A31B5 /* SujiGradient.swift */; };
 		27CFB3F72F413728000A31B5 /* SexButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3F62F413728000A31B5 /* SexButton.swift */; };
+		27CFB3FB2F41428B000A31B5 /* Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3FA2F414288000A31B5 /* Focus.swift */; };
+		27CFB3FD2F414333000A31B5 /* SexViewExension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3FC2F41431F000A31B5 /* SexViewExension.swift */; };
+		27CFB3FF2F4145F6000A31B5 /* FocusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3FE2F4145F6000A31B5 /* FocusButton.swift */; };
+		27CFB4052F41F0FC000A31B5 /* FocusViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB4042F41F0F0000A31B5 /* FocusViewExtension.swift */; };
 		F0D529192F3A55BF00FA0636 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D529162F3A55BF00FA0636 /* EmailView.swift */; };
 		F0D5291A2F3A55BF00FA0636 /* Suji_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D529172F3A55BF00FA0636 /* Suji_ChallengeApp.swift */; };
 		F0D5291B2F3A55BF00FA0636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D529152F3A55BF00FA0636 /* Assets.xcassets */; };
@@ -41,10 +45,14 @@
 		27CFB3E62F40E1A3000A31B5 /* SexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexView.swift; sourceTree = "<group>"; };
 		27CFB3E82F40E1C5000A31B5 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		27CFB3EA2F40E22F000A31B5 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
-		27CFB3EC2F40E950000A31B5 /* DateContentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateContentExtension.swift; sourceTree = "<group>"; };
+		27CFB3EC2F40E950000A31B5 /* DateViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewExtension.swift; sourceTree = "<group>"; };
 		27CFB3F02F40EA22000A31B5 /* SujiLogout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujiLogout.swift; sourceTree = "<group>"; };
 		27CFB3F22F40EC33000A31B5 /* SujiGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujiGradient.swift; sourceTree = "<group>"; };
 		27CFB3F62F413728000A31B5 /* SexButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexButton.swift; sourceTree = "<group>"; };
+		27CFB3FA2F414288000A31B5 /* Focus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus.swift; sourceTree = "<group>"; };
+		27CFB3FC2F41431F000A31B5 /* SexViewExension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexViewExension.swift; sourceTree = "<group>"; };
+		27CFB3FE2F4145F6000A31B5 /* FocusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusButton.swift; sourceTree = "<group>"; };
+		27CFB4042F41F0F0000A31B5 /* FocusViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewExtension.swift; sourceTree = "<group>"; };
 		F0D528EB2F3A544600FA0636 /* Suji-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Suji-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D529152F3A55BF00FA0636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0D529162F3A55BF00FA0636 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
@@ -73,6 +81,7 @@
 		27CFB3C82F3FC068000A31B5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				27CFB3FA2F414288000A31B5 /* Focus.swift */,
 				27CFB3D02F3FC4E4000A31B5 /* Sex.swift */,
 				27CFB3CC2F3FC47F000A31B5 /* UserProfile.swift */,
 			);
@@ -82,7 +91,9 @@
 		27CFB3C92F3FC077000A31B5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				27CFB3EC2F40E950000A31B5 /* DateContentExtension.swift */,
+				27CFB4042F41F0F0000A31B5 /* FocusViewExtension.swift */,
+				27CFB3FC2F41431F000A31B5 /* SexViewExension.swift */,
+				27CFB3EC2F40E950000A31B5 /* DateViewExtension.swift */,
 				27CFB3E02F40C0B1000A31B5 /* DateExtension.swift */,
 				27CFB3D62F3FF2D9000A31B5 /* EmailExtension.swift */,
 				27CFB3D82F40A724000A31B5 /* EmailViewExtension.swift */,
@@ -98,6 +109,7 @@
 				27CFB3DA2F40A83B000A31B5 /* SujiTextField.swift */,
 				27CFB3DC2F40AA4E000A31B5 /* SujiButton.swift */,
 				27CFB3F62F413728000A31B5 /* SexButton.swift */,
+				27CFB3FE2F4145F6000A31B5 /* FocusButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -230,19 +242,23 @@
 			files = (
 				27CFB3D12F3FC4E7000A31B5 /* Sex.swift in Sources */,
 				27CFB3DD2F40AA4E000A31B5 /* SujiButton.swift in Sources */,
+				27CFB3FD2F414333000A31B5 /* SexViewExension.swift in Sources */,
 				27CFB3DF2F40AEB4000A31B5 /* DOBView.swift in Sources */,
 				27CFB3D42F3FC6A7000A31B5 /* UserState.swift in Sources */,
-				27CFB3ED2F40E95A000A31B5 /* DateContentExtension.swift in Sources */,
+				27CFB3ED2F40E95A000A31B5 /* DateViewExtension.swift in Sources */,
 				27CFB3D72F3FF2FC000A31B5 /* EmailExtension.swift in Sources */,
 				27CFB3D92F40A724000A31B5 /* EmailViewExtension.swift in Sources */,
+				27CFB4052F41F0FC000A31B5 /* FocusViewExtension.swift in Sources */,
 				27CFB3E72F40E1A3000A31B5 /* SexView.swift in Sources */,
 				27CFB3E12F40C0CA000A31B5 /* DateExtension.swift in Sources */,
+				27CFB3FB2F41428B000A31B5 /* Focus.swift in Sources */,
 				F0D529192F3A55BF00FA0636 /* EmailView.swift in Sources */,
 				F0D5291A2F3A55BF00FA0636 /* Suji_ChallengeApp.swift in Sources */,
 				27CFB3CD2F3FC490000A31B5 /* UserProfile.swift in Sources */,
 				27CFB3F32F40EC3B000A31B5 /* SujiGradient.swift in Sources */,
 				27CFB3E92F40E1C5000A31B5 /* UploadView.swift in Sources */,
 				27CFB3F12F40EA27000A31B5 /* SujiLogout.swift in Sources */,
+				27CFB3FF2F4145F6000A31B5 /* FocusButton.swift in Sources */,
 				27CFB3DB2F40A842000A31B5 /* SujiTextField.swift in Sources */,
 				27CFB3F72F413728000A31B5 /* SexButton.swift in Sources */,
 				27CFB3EB2F40E22F000A31B5 /* FocusView.swift in Sources */,

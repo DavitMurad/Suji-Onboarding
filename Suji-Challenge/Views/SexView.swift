@@ -23,22 +23,10 @@ struct SexView: View {
                 .bold()
                 .padding(.bottom, 20)
             
-            VStack(alignment: .center, spacing: 20) {
-                ForEach(Sex.allCases, id: \.self) { sex in
-                    
-                    SexButton(sex: sex, isSelected: userState.user.gender == sex) {
-                        userState.user.gender = sex
-                        
-                        Task {
-                            try? await Task.sleep(nanoseconds: 100000000)
-                            path.append(.focus)
-                        }
-                    }
-                }
-            }
+            sexViewOptions
             Spacer()
         }
-        .padding(.top, 50)
+        .padding(.top, 60)
         .padding(.horizontal, 30)
     }
         .toolbar {

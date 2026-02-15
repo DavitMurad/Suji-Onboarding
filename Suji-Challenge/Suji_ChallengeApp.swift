@@ -26,6 +26,7 @@ struct Suji_ChallengeApp: App {
                                 .environmentObject(userState)
                         case .focus:
                             FocusView(path: $path)
+                                .environmentObject(userState)
                         case .upload:
                             UploadView(path: $path)
                         }

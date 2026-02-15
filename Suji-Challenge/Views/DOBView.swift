@@ -19,7 +19,7 @@ struct DOBView: View {
         
         dateStackContent
                 .padding(.horizontal)
-                .padding(.top, 50)
+                .padding(.top, 60)
         
             .toolbar {
                 SujiLogout(path: $path)
