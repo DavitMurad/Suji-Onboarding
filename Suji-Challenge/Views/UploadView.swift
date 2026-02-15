@@ -10,8 +10,9 @@ import PhotosUI
 
 struct UploadView: View {
     @Binding var path: [OnboardingRoute]
+    @EnvironmentObject var userState: UserState
+
     @State private var selectedItem: PhotosPickerItem?
-    @State private var selectedImage: Image?
     var body: some View {
         ZStack {
             SujiGradient()
@@ -23,19 +24,40 @@ struct UploadView: View {
                 
                 Spacer()
                 
-                if let selectedImage = selectedImage {
-                    selectedImage
+                if let image = userState.user.profileImage {
+                    Image(uiImage: image)
                         .resizable()
                         .scaledToFill()
-                        .clipShape(Circle())
                         .frame(width: 150, height: 150)
+                        .clipShape(Circle())
+                     
                     
                     PhotosPicker(selection: $selectedItem) {
                         Text("Change Image")
+                            .foregroundStyle(.black)
+                            .padding()
+                            .background(RoundedRectangle(cornerRadius: 12).fill(.white))
+                            
                     }
+                    .onChange(of: selectedItem, { _, newValue in
+                        Task {
+                               if let data = try? await newValue?.loadTransferable(type: Data.self),
+                                  let uiImage = UIImage(data: data) {
+                                   userState.user.profileImage = uiImage
+                               }
+                           }
+                    })
+                    
                     Button ("Remove Image") {
-                        self.selectedImage = nil
+                        userState.user.profileImage = nil
                     }
+                    .foregroundStyle(.white)
+                    .padding()
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.white.opacity(0.2), lineWidth: 2)
+                    )
+                    
                     
                 } else {
                     PhotosPicker(selection: $selectedItem) {
@@ -51,10 +73,11 @@ struct UploadView: View {
                     }
                     .onChange(of: selectedItem, { _, newValue in
                         Task {
-                            if let image = try? await newValue?.loadTransferable(type: Image.self) {
-                                selectedImage = image
-                            }
-                        }
+                               if let data = try? await newValue?.loadTransferable(type: Data.self),
+                                  let uiImage = UIImage(data: data) {
+                                   userState.user.profileImage = uiImage
+                               }
+                           }
                     })
                     .frame(width: 150, height: 150)
                 }
@@ -64,15 +87,16 @@ struct UploadView: View {
                     .font(.caption)
                     .foregroundStyle(.white)
                     .bold()
+                    .padding(.bottom)
                 
-                if let _ = selectedImage {
+                if let _ = userState.user.profileImage {
                     SujiButton(title: "Continue", isEnabled: true) {
                         path.append(.end)
                     }
                 }
                 else {
                     Button {
-                        
+                        path.append(.end)
                     } label: {
                         Text("Skip")
                             .fontWeight(.semibold)
@@ -87,14 +111,11 @@ struct UploadView: View {
                                 RoundedRectangle(cornerRadius: 15)
                                     .stroke(Color.white.opacity(0.2), lineWidth: 0.5)
                             )
-                        
                     }
                 }
-                
             }
             .padding(.top, 50)
             .padding(.horizontal, 30)
-            
         }
         .toolbar {
             SujiLogout(path: $path)
@@ -102,7 +123,7 @@ struct UploadView: View {
     }
 }
 
-#Preview {
-    @Previewable @State var route: [OnboardingRoute] = [.upload]
-    UploadView(path: $route)
-}
+//#Preview {
+//    @Previewable @State var route: [OnboardingRoute] = [.upload]
+//    UploadView(path: $route)
+//}

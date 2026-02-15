@@ -29,7 +29,6 @@ struct FocusView: View {
         .toolbar {
             SujiLogout(path: $path)
         }
-        
     }
 }
 
