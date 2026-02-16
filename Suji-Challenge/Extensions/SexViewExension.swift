@@ -14,14 +14,10 @@ extension SexView {
                 
                 SexButton(sex: sex, isSelected: userState.user.gender == sex) {
                     userState.user.gender = sex
-                    
-                    Task {
-                        try? await Task.sleep(nanoseconds: 100000000)
-                        path.append(.focus)
-                    }
+                    path.append(.focus)
                 }
             }
         }
     }
-   
+    
 }

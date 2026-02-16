@@ -25,6 +25,10 @@ extension DOBView {
             .background(Color(white: 0.2))
             .clipShape(RoundedRectangle(cornerRadius: 15))
             .tint(.blue)
+            //Questionable
+            .frame(minHeight: 350, idealHeight: 400, maxHeight: 450)
+            //This fixes it for some reason
+            //            .frame(width: 320)
             .onChange(of: selectedBirthDate) { _, _ in
                 hasUserSelectedDate = true
             }
@@ -35,7 +39,6 @@ extension DOBView {
                 Text(selectedBirthDate.formatted(date: .numeric, time: .omitted))
                     .foregroundStyle(.gray)
                     .bold()
-                    .padding(.top, 30)
                 
                 Spacer()
                 
@@ -46,8 +49,9 @@ extension DOBView {
                 }
             }
         }
-
-       
+        .padding(.top, 80)
+        
+        
     }
     
 }

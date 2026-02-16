@@ -15,20 +15,17 @@ struct DOBView: View {
     
     var body: some View {
         ZStack {
-        SujiGradient()
-        
-        dateStackContent
-                .padding(.horizontal)
-                .padding(.top, 60)
-        
-            .toolbar {
-                SujiLogout(path: $path)
+            SujiGradient()
+            ScrollView {
+                dateStackContent
+                    .padding(.horizontal)
+                    .toolbar {
+                        SujiLogout(path: $path)
+                    }
             }
-                    .navigationBarBackButtonHidden()
+            .navigationBarBackButtonHidden()
+        }
+        
     }
 }
-}
 
-//#Preview {
-//    DOBView()
-//}

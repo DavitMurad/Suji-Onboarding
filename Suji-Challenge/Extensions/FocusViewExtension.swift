@@ -11,6 +11,7 @@ extension FocusView {
     var focusContent: some View {
         
         VStack(spacing: 15) {
+            
             Group {
                 Text("My Focus")
                     .foregroundStyle(.white)
@@ -34,12 +35,12 @@ extension FocusView {
                             userState.user.focusAreas.insert(focus)
                         }
                     }
-                    
                 }
             }
+            .padding(.top, 50)
             .padding(.horizontal, 30)
             
-            .padding(.top, 50)
         }
+        .padding(.top, 80)
     }
 }

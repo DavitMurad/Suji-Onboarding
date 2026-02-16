@@ -15,6 +15,7 @@ struct Suji_ChallengeApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack(path: $path) {
+                // Defining navigation path, very clean and reusable
                 EmailView(path: $path)
                     .navigationDestination(for: OnboardingRoute.self, destination: { route in
                         switch route {
@@ -39,6 +40,5 @@ struct Suji_ChallengeApp: App {
             }
             .preferredColorScheme(.dark)
         }
-        
     }
 }

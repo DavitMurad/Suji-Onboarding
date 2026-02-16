@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		275FFCFD2F438F6E00F76566 /* UploadViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275FFCFC2F438F6200F76566 /* UploadViewExtension.swift */; };
 		27CFB3CD2F3FC490000A31B5 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3CC2F3FC47F000A31B5 /* UserProfile.swift */; };
 		27CFB3D12F3FC4E7000A31B5 /* Sex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3D02F3FC4E4000A31B5 /* Sex.swift */; };
 		27CFB3D42F3FC6A7000A31B5 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFB3D32F3FC6A1000A31B5 /* UserState.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		275FFCFC2F438F6200F76566 /* UploadViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewExtension.swift; sourceTree = "<group>"; };
 		27CFB3CC2F3FC47F000A31B5 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		27CFB3D02F3FC4E4000A31B5 /* Sex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sex.swift; sourceTree = "<group>"; };
 		27CFB3D32F3FC6A1000A31B5 /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		27CFB3C92F3FC077000A31B5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				275FFCFC2F438F6200F76566 /* UploadViewExtension.swift */,
 				27CFB4042F41F0F0000A31B5 /* FocusViewExtension.swift */,
 				27CFB3FC2F41431F000A31B5 /* SexViewExension.swift */,
 				27CFB3EC2F40E950000A31B5 /* DateViewExtension.swift */,
@@ -251,6 +254,7 @@
 				27CFB3ED2F40E95A000A31B5 /* DateViewExtension.swift in Sources */,
 				27CFB3D72F3FF2FC000A31B5 /* EmailExtension.swift in Sources */,
 				27CFB3D92F40A724000A31B5 /* EmailViewExtension.swift in Sources */,
+				275FFCFD2F438F6E00F76566 /* UploadViewExtension.swift in Sources */,
 				27CFB4052F41F0FC000A31B5 /* FocusViewExtension.swift in Sources */,
 				27CFB3E72F40E1A3000A31B5 /* SexView.swift in Sources */,
 				27CFB3E12F40C0CA000A31B5 /* DateExtension.swift in Sources */,

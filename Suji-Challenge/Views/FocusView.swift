@@ -15,15 +15,17 @@ struct FocusView: View {
             SujiGradient()
             ScrollView {
                 focusContent
-                    .padding(.top, 60)
             }
             if userState.user.focusAreas.count > 0 {
-                withAnimation(.easeInOut) {
-                    SujiButton(title: "Continue", isEnabled: true) {
-                        path.append(.upload)
-                    }
-                    .padding(.horizontal, 30)
+                
+                SujiButton(title: "Continue", isEnabled: true) {
+                    path.append(.upload)
                 }
+                .padding(.bottom, 15)
+                .padding(.horizontal, 30)
+                .frame(maxHeight: .infinity, alignment: .bottom)
+                .transition(.move(edge: .bottom).combined(with: .opacity))
+                
             }
         }
         .toolbar {
@@ -31,8 +33,3 @@ struct FocusView: View {
         }
     }
 }
-
-//#Preview {
-//    @Previewable @State var route: [OnboardingRoute] = [.focus]
-//    FocusView(path: $route)
-//}

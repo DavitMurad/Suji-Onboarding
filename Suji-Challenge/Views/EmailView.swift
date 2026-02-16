@@ -26,7 +26,7 @@ struct EmailView: View {
                 
                 ScrollView {
                     signUpCard
-                        .frame(minHeight: geom.size.height)
+                        .frame(minHeight: geom.size.height) // Letting view know of its exact size to be able to scroll up upon activating keyboard
                 }
                 .scrollDismissesKeyboard(.interactively)
             }

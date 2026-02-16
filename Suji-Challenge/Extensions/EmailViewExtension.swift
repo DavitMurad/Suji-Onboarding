@@ -34,8 +34,6 @@ extension EmailView {
                 )
                 .shadow(color: .black.opacity(0.4), radius: 30)
                 .padding()
-            
-            
                 .overlay {
                     VStack(spacing: 25) {
                         Text("Sign Up")
@@ -47,15 +45,12 @@ extension EmailView {
                         
                         
                         SujiTextField(placeholder: "Enter you email", textFieldText: $userState.user.emailAddress,  isFieldFocused: $isFieldFocused)
-
+                        
                         SujiButton(title: "Continue", isEnabled: isEmailValid) {
                             path.append(.dob)
                             isFieldFocused = false
                         }
                         .disabled(!isEmailValid)
-//                        .navigationDestination(isPresented: $isPresented) {
-//                            DOBView()
-//                        }
                         
                     }
                     .padding(.horizontal, 30)
